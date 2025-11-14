@@ -3,4 +3,12 @@ name = "learn-rust"
 version = "0.1.0"
 edition = "2024"
 
+[lib]
+crate-type = ["cdylib"] 
+
 [dependencies]
+wasm-bindgen = "0.2"
+
+[dev-dependencies]
+# wasm-pack test コマンドで Wasm 環境でのテストを可能にする
+wasm-bindgen-test = "0.3"
